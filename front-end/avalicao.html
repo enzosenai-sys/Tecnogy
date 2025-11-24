@@ -4,44 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            background: linear-gradient(180deg, #4001a7, #400391, #1E0BD9);
+            color: white;
+        }
+
+        .avaliacoes {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .avaliacoes h2 {
+            font-size: 48px;
+            background: #00000060;
+            display: inline-block;
+            padding: 20px 60px;
+            border-radius: 12px;
+            margin-bottom: 50px;
+        }
+
+        .cards-container {
+            display: grid;
+            justify-content: center;
+            grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+            gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: #FFF4D1;
+            color: black;
+            padding: 30px;
+            border-radius: 15px;
+            width: 350px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .user-icon {
+            font-size: 40px;
+            background: #FFBB00;
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: -50px auto 10px auto;
+        }
+
+        .stars {
+            font-size: 26px;
+            margin-top: 15px;
+            color: #F4B400;
+        }
+    </style>
+
 </head>
 <body>
-    
+
+    <!-- SESSÃO DE AVALIAÇÕES -->
+    <section class="avaliacoes">
+        <h2>Avaliações</h2>
+
+        <div class="cards-container">
+
+            <div class="card">
+                <div class="user-icon">👤</div>
+                <p><strong>Carlos Mendes:</strong> "A qualidade do código superou minhas expectativas. Arquitetura limpa, bem documentada e escalável. Recomendo fortemente!"</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+
+            <div class="card">
+                <div class="user-icon">👤</div>
+                <p><strong>Fernanda Souza:</strong> "Ferramentas incríveis que agilizaram muito meu fluxo de trabalho. A integração com outras APIs é perfeita e sem bugs."</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+
+            <div class="card">
+                <div class="user-icon">👤</div>
+                <p><strong>João Silva:</strong> "O suporte técnico é de outro nível. Tive uma dúvida sobre a implementação e a equipe de devs me ajudou em minutos."</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+
+            <div class="card">
+                <div class="user-icon">👤</div>
+                <p><strong>Roberto Dias:</strong> "Impressionado com a velocidade do site. Otimização de performance nota 10, o que é essencial para nós desenvolvedores."</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+
+        </div>
+    </section>
+
 </body>
 </html>
-
-<section class="avaliacoes">
-    <h2>Avaliações</h2>
-
-    <div class="cards-container">
-
-        <!-- Card 1 -->
-        <div class="card">
-            <div class="user-icon">👤</div>
-            <p><strong>Carlos Mendes:</strong> "A qualidade do código superou minhas expectativas. Arquitetura limpa, bem documentada e escalável. Recomendo fortemente!"</p>
-            <div class="stars">⭐⭐⭐⭐⭐</div>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="card">
-            <div class="user-icon">👤</div>
-            <p><strong>Fernanda Souza:</strong> "Ferramentas incríveis que agilizaram muito meu fluxo de trabalho. A integração com outras APIs é perfeita e sem bugs."</p>
-            <div class="stars">⭐⭐⭐⭐⭐</div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="card">
-            <div class="user-icon">👤</div>
-            <p><strong>João Silva:</strong> "O suporte técnico é de outro nível. Tive uma dúvida sobre a implementação e a equipe de devs me ajudou em minutos."</p>
-            <div class="stars">⭐⭐⭐⭐⭐</div>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="card">
-            <div class="user-icon">👤</div>
-            <p><strong>Roberto Dias:</strong> "Impressionado com a velocidade do site. Otimização de performance nota 10, o que é essencial para nós desenvolvedores."</p>
-            <div class="stars">⭐⭐⭐⭐⭐</div>
-        </div>
-
-    </div>
-</section>
