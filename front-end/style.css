@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(180deg, #0200A6, #1C0FAF, #1E0BD9);
+    color: white;
+}
+
+.avaliacoes {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.avaliacoes h2 {
+    font-size: 48px;
+    background: #00000060;
+    display: inline-block;
+    padding: 20px 60px;
+    border-radius: 12px;
+    margin-bottom: 50px;
+}
+
+.cards-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    background: #FFF4D1;
+    color: black;
+    padding: 30px;
+    border-radius: 15px;
+    width: 350px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.user-icon {
+    font-size: 40px;
+    background: #FFBB00;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -50px auto 10px auto;
+}
+
+.stars {
+    font-size: 26px;
+    margin-top: 15px;
+    color: #F4B400;
+}
